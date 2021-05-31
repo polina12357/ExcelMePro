@@ -1,0 +1,33 @@
+<resources>
+    <string name="app_name">ExcelMe(BasicActivity)</string>
+    <string name="action_settings">Settings</string>
+    <!-- Strings used for fragments for navigation -->
+    <string name="applicationName">ExcelMe</string>
+    <string name="second_fragment_label">Second page</string>
+    <string name="next">Next</string>
+    <string name="previous">Previous</string>
+    <string name="calendarContentDescription">Calendar</string>
+    <string name="settingsContentDescription">Settings</string>
+    <string name="hello_first_fragment">Hello first fragment</string>
+    <string name="hello_second_fragment">Hello second fragment. Arg: %1$s</string>
+    <!--Sections names!-->
+
+    <string name="first_section_name">Sport</string>
+    <string name="second_section_name">Food</string>
+    <string name="third_section_name">Habits</string>
+    <string name="fourth_section_name">Sleep</string>
+
+    <string name="sport_first_section">Arms</string>
+    <string name="sport_second_section">Legs</string>
+    <string name="sport_third_section">Abs</string>
+    <string name="sport_fourth_section">Full Body</string>
+
+    <string name="food_first_section">Breakfast</string>
+    <string name="food_second_section">Lunch</string>
+    <string name="food_third_section">Dinner</string>
+    <string name="food_fourth_section">Snacks</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+
+    <!--Sections names end!-->
+</resources>
