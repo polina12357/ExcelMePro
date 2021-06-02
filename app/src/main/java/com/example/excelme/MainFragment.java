@@ -58,6 +58,14 @@ public class MainFragment extends Fragment{
             }
         });
 
+        view.findViewById(R.id.calendar).setOnClickListener(new View.OnClickListener(){
+            @Override
+            public void onClick(View v) {
+                // Going to Calendar fragment
+                // controller.navigate(R.id.action_mainFragment_to_sportFragment);
+            }
+        });
+
     }
 
 

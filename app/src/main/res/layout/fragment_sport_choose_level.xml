@@ -6,6 +6,7 @@
     android:layout_height="match_parent"
     android:background="@drawable/background"
     tools:context=".SportChooseLevel">
+    <include layout="@layout/toolbartop"/>
 
     <com.google.android.material.card.MaterialCardView
         style="@style/menuLeft"
@@ -66,5 +67,9 @@
         </RelativeLayout>
 
     </com.google.android.material.card.MaterialCardView>
-
+    <include layout="@layout/toolbarbottom"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintBottom_toBottomOf="parent"
+        android:layout_marginBottom="0dp"/>
 </androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,12 +1,18 @@
 <?xml version="1.0" encoding="utf-8"?>
-<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    xmlns:tools="http://schemas.android.com/tools"
     android:id="@+id/fragment_main_menu"
     app:layout_dodgeInsetEdges="all"
     tools:context=".MainFragment">
+
+
+    <include layout="@layout/toolbartopmain"/>
+
+
 
     <TextView
         android:id="@+id/day"
@@ -25,7 +31,7 @@
         style="@style/menuLeft"
         android:layout_width="280dp"
         android:layout_height="140dp"
-        android:layout_marginTop="60dp"
+        android:layout_marginTop="100dp"
         android:background="@color/white"
         android:visibility="visible"
         app:layout_constraintStart_toStartOf="parent"
@@ -53,14 +59,14 @@
 
                     <ImageView
                         android:id="@+id/first_section_icon"
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:layout_marginTop="20dp"
+                        android:layout_width="120dp"
+                        android:layout_height="90dp"
+                        android:layout_marginTop="0dp"
                         android:contentDescription="@string/first_section_name"
                         app:layout_constraintEnd_toEndOf="parent"
                         app:layout_constraintStart_toStartOf="parent"
                         app:layout_constraintTop_toTopOf="parent"
-                        app:srcCompat="@drawable/ic_sport" />
+                        app:srcCompat="@drawable/ic_sport_w" />
 
                     <TextView
                         android:id="@+id/first_section_text"
@@ -96,14 +102,14 @@
 
                     <ImageView
                         android:id="@+id/second_section_icon"
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
+                        android:layout_width="65dp"
+                        android:layout_height="65dp"
                         android:layout_marginTop="10dp"
                         android:contentDescription="@string/second_section_name"
                         app:layout_constraintEnd_toEndOf="parent"
                         app:layout_constraintStart_toStartOf="parent"
                         app:layout_constraintTop_toTopOf="parent"
-                        app:srcCompat="@drawable/ic_food" />
+                        app:srcCompat="@drawable/ic_food_w" />
 
                     <TextView
                         android:id="@+id/second_section_text"
@@ -161,14 +167,14 @@
 
                     <ImageView
                         android:id="@+id/third_section_icon"
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:layout_marginTop="10dp"
+                        android:layout_width="70dp"
+                        android:layout_height="70dp"
+                        android:layout_marginTop="5dp"
                         android:contentDescription="@string/third_section_name"
                         app:layout_constraintEnd_toEndOf="parent"
                         app:layout_constraintStart_toStartOf="parent"
                         app:layout_constraintTop_toTopOf="parent"
-                        app:srcCompat="@drawable/ic_habits" />
+                        app:srcCompat="@drawable/ic_habit_w" />
 
                     <TextView
                         android:id="@+id/third_section_text"
@@ -204,14 +210,14 @@
 
                     <ImageView
                         android:id="@+id/fourth_section_icon"
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
+                        android:layout_width="65dp"
+                        android:layout_height="65dp"
                         android:layout_marginTop="10dp"
                         android:contentDescription="@string/fourth_section_name"
                         app:layout_constraintEnd_toEndOf="parent"
                         app:layout_constraintStart_toStartOf="parent"
                         app:layout_constraintTop_toTopOf="parent"
-                        app:srcCompat="@drawable/ic_sleep" />
+                        app:srcCompat="@drawable/ic_sleep_w" />
 
                     <TextView
                         android:id="@+id/fourth_section_text"
@@ -231,6 +237,7 @@
 
         </androidx.constraintlayout.widget.ConstraintLayout>
     </com.google.android.material.card.MaterialCardView>
+
 
 </androidx.constraintlayout.widget.ConstraintLayout>
 

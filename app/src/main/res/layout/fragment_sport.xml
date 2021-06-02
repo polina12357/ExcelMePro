@@ -5,13 +5,13 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     tools:context=".SportFragment">
-
+    <include layout="@layout/toolbartop"/>
     <TextView
         android:id="@+id/section_name_sport"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginStart="12dp"
-        android:layout_marginTop="50dp"
+        android:layout_marginTop="90dp"
         android:fontFamily="@font/roboto"
         android:text="@string/first_section_name"
         android:textColor="@color/dateTextColour"
@@ -220,15 +220,9 @@
         </androidx.constraintlayout.widget.ConstraintLayout>
     </com.google.android.material.card.MaterialCardView>
 
-    <Button
-        android:id="@+id/sport_back"
-        android:layout_width="wrap_content"
+    <include layout="@layout/toolbarbottom"
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="Back (to be removed)"
         app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.84000003" />
-
+        android:layout_marginBottom="0dp"/>
 </androidx.constraintlayout.widget.ConstraintLayout>

@@ -23,17 +23,45 @@ public class FoodFragment extends Fragment {
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
                              Bundle savedInstanceState) {
         // Inflate the layout for this fragment
-        return inflater.inflate(R.layout.fragment_food, container, false);
+        return inflater.inflate(R.layout.fragment_diet, container, false);
     }
 
     @Override
     public void onViewCreated(@NonNull @NotNull View view, @Nullable @org.jetbrains.annotations.Nullable Bundle savedInstanceState) {
         super.onViewCreated(view, savedInstanceState);
         controller = Navigation.findNavController(view);
-        view.findViewById(R.id.food_back).setOnClickListener(new View.OnClickListener() {
+        view.findViewById(R.id.back).setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
                 controller.navigate(R.id.action_foodFragment_to_mainFragment);
+            }
+        });
+
+        view.findViewById(R.id.sport_button).setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                controller.navigate(R.id.action_foodFragment_to_sportFragment);
+            }
+        });
+
+        view.findViewById(R.id.food_button).setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                //controller.navigate(R.id.action_foodFragment_to_foodFragment);
+            }
+        });
+
+        view.findViewById(R.id.habit_button).setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                controller.navigate(R.id.action_foodFragment_to_habitsFragment);
+            }
+        });
+
+        view.findViewById(R.id.sleep_button).setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                controller.navigate(R.id.action_foodFragment_to_sleepFragment);
             }
         });
     }

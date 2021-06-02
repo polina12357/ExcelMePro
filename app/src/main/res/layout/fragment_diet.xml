@@ -1,21 +1,38 @@
 <?xml version="1.0" encoding="utf-8"?>
-<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     tools:context=".FoodFragment">
+    <include layout="@layout/toolbartop"/>
 
-    <TextView
+ <TextView
         android:id="@+id/section_name_food"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginStart="12dp"
-        android:layout_marginTop="50dp"
+        android:layout_marginTop="90dp"
         android:fontFamily="@font/roboto"
-        android:text="@string/second_section_name"
+        android:text="Diet"
         android:textColor="@color/dateTextColour"
         android:textSize="30sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/daily_calories_1600"
+        android:layout_width="226dp"
+        android:layout_height="99.5dp"
+        android:layout_gravity="center_horizontal|center"
+        android:layout_marginStart="168dp"
+        android:layout_marginTop="88dp"
+        android:fontFamily="@font/roboto"
+        android:gravity="center"
+        android:text="Daily calories 1600"
+        android:textColor="@color/white"
+        android:textSize="32sp"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
@@ -47,7 +64,9 @@
                 <androidx.constraintlayout.widget.ConstraintLayout
                     android:id="@+id/breakfast_menu_card"
                     android:layout_width="match_parent"
-                    android:layout_height="match_parent">
+                    android:layout_height="match_parent"
+
+                    >
 
 
                     <ImageView
@@ -87,7 +106,9 @@
 
                 <androidx.constraintlayout.widget.ConstraintLayout
                     android:layout_width="match_parent"
-                    android:layout_height="match_parent">
+                    android:layout_height="match_parent"
+
+                    >
 
 
                     <ImageView
@@ -136,7 +157,8 @@
         <androidx.constraintlayout.widget.ConstraintLayout
             android:layout_width="match_parent"
             android:layout_height="match_parent"
-            android:visibility="visible">
+            android:visibility="visible"
+            >
 
             <com.google.android.material.card.MaterialCardView
                 android:id="@+id/dinner"
@@ -149,7 +171,9 @@
 
                 <androidx.constraintlayout.widget.ConstraintLayout
                     android:layout_width="match_parent"
-                    android:layout_height="match_parent">
+                    android:layout_height="match_parent"
+
+                    >
 
 
                     <ImageView
@@ -220,15 +244,10 @@
         </androidx.constraintlayout.widget.ConstraintLayout>
     </com.google.android.material.card.MaterialCardView>
 
-    <Button
-        android:id="@+id/food_back"
-        android:layout_width="wrap_content"
+    <include layout="@layout/toolbarbottom"
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="Back (to be removed)"
         app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.84000003" />
+        android:layout_marginBottom="0dp"/>
 
 </androidx.constraintlayout.widget.ConstraintLayout>
